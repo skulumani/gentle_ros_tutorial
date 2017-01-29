@@ -125,6 +125,8 @@ add_executable(hello hello.cpp)
 add_executable(pubvel pubvel.cpp)
 add_executable(subpose subpose.cpp)
 add_executable(count count.cpp)
+add_executable(once once.cpp)
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(agitr_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
@@ -134,6 +136,7 @@ target_link_libraries(hello ${catkin_LIBRARIES})
 target_link_libraries(pubvel ${catkin_LIBRARIES})
 target_link_libraries(subpose ${catkin_LIBRARIES})
 target_link_libraries(count ${catkin_LIBRARIES})
+target_link_libraries(once ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
