@@ -1,4 +1,7 @@
 // This programe generates log messages at varying severity levels, throttled to various maximum speeds
+
+// This is generally a bad idea since it uses polling rather than sleeping. 
+// Better to use rate.sleep()
 #include <ros/ros.h>
 
 int main(int argc, char **argv)
