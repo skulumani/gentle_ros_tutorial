@@ -18,3 +18,16 @@ It will interface with ROS using C++ or Python
     * This will do a bunch of stuff and create the `devel` and `build` directories. 
     These can be deleted safely after working on package
 7. Execute `source devel/setup.bash` after every compile or in a new terminal window
+8. Run `roscore` then your nodes `rosrun package_name node_name`
+9. Purge log files eventually using `rosclean check` and `rosclean purge`
+
+## Log files
+
+By default logging is only for levels above INFO. 
+You can set the logging level of a node using `rqt_logger_level` or 
+~~~
+$ rosservice call /node-name/set_logger_level ros.package-name level
+~~~
+
+Having a log output below the logging level does not use any computation. 
+It is shut off at the sending node rather than the recieving.
