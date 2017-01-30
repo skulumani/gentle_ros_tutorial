@@ -129,6 +129,7 @@ add_executable(once once.cpp)
 add_executable(throttle throttle.cpp)
 add_executable(anon anon.cpp)
 add_executable(reverse_cmd_vel reverse_cmd_vel.cpp)
+add_executable(set_bg_color set_bg_color.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(agitr_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
@@ -142,6 +143,7 @@ target_link_libraries(once ${catkin_LIBRARIES})
 target_link_libraries(throttle ${catkin_LIBRARIES})
 target_link_libraries(anon ${catkin_LIBRARIES})
 target_link_libraries(reverse_cmd_vel ${catkin_LIBRARIES})
+target_link_libraries(set_bg_color ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
